@@ -5,6 +5,8 @@ alias lla='ls -la'
 
 # handy git alias
 alias g='git'
+# git bash completion
+source /usr/local/etc/bash_completion.d/git-completion.bash
 
 # chruby init
 source /usr/local/opt/chruby/share/chruby/chruby.sh
@@ -20,4 +22,3 @@ export HISTSIZE=
 export HISTFILESIZE=
 # other history changes
 export HISTTIMEFORMAT='%Y\%m\%d %T '
-
