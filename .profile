@@ -3,6 +3,9 @@ alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
 
+# handy git alias
+alias g='git'
+
 # chruby init
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
