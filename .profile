@@ -17,4 +17,6 @@ export PS1='\w \$ '
 # eternal history
 export HISTSIZE=
 export HISTFILESIZE=
+# other history changes
+export HISTTIMEFORMAT='%Y\%m\%d %T '
 
