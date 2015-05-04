@@ -15,6 +15,7 @@ chruby 2.2.2
 export PS1='\w \$ '
 
 # eternal history
+export HISTFILE='/Users/Tim/.bash_eternal_history'
 export HISTSIZE=
 export HISTFILESIZE=
 # other history changes
