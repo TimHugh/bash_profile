@@ -11,6 +11,7 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 # chruby init
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
+# set default ruby
 chruby 2.2.2
 
 # custom prompt
@@ -20,5 +21,5 @@ export PS1='\w \$ '
 export HISTFILE='/Users/Tim/.bash_eternal_history'
 export HISTSIZE=
 export HISTFILESIZE=
-# other history changes
+# add timestamp to history
 export HISTTIMEFORMAT='%Y\%m\%d %T '
