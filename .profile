@@ -14,6 +14,10 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 # set default ruby
 chruby 2.2.2
 
+# nvm init
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # custom prompt
 export PS1='\w \$ '
 
