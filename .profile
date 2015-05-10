@@ -27,3 +27,7 @@ export HISTSIZE=
 export HISTFILESIZE=
 # add timestamp to history
 export HISTTIMEFORMAT='%Y\%m\%d %T '
+
+# handy dandy server
+alias serve='ruby -run -ehttpd . -p4000'
+
