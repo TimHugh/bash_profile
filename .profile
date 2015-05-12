@@ -1,3 +1,6 @@
+# cwd bin and ~ bin
+export PATH=./bin:~/bin:$PATH
+
 # handy LS aliases
 alias la='ls -a'
 alias ll='ls -l'
