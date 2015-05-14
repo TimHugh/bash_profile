@@ -6,6 +6,10 @@ alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
 
+# use hub in place of git
+# (https://hub.github.com/)
+alias git='hub'
+
 # handy git alias
 alias g='git'
 # git bash completion
