@@ -1,7 +1,8 @@
 # cwd bin and ~ bin
 export PATH=./bin:~/bin:$PATH
 
-# handy LS aliases
+# handy LS aliases (and color!)
+alias ls='ls -G'
 alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
@@ -41,4 +42,3 @@ alias serve='ruby -run -ehttpd . -p4000'
 # shortcut for gitx
 # (http://rowanj.github.io/gitx/)
 alias gitx='/Applications/GitX.app/Contents/MacOS/GitX . &'
-
