@@ -1,3 +1,8 @@
+# load secret env variables!
+if [ -f .env ]; then
+      . .env
+fi
+
 # cwd bin and ~ bin
 export PATH=./bin:~/bin:$PATH
 
