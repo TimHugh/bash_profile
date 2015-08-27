@@ -12,6 +12,10 @@ alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
 
+# human readable file sizes
+alias df='df -h'
+alias du='du -h'
+
 # use hub in place of git
 # (https://hub.github.com/)
 alias git='hub'
