@@ -3,8 +3,11 @@ if [ -f .env ]; then
       . .env
 fi
 
-# cwd bin and ~ bin
-export PATH=./bin:~/bin:$PATH
+# add ~ bin to path
+export PATH=~/bin:$PATH
+
+# preferred editor from env variable
+alias edit=$EDITOR
 
 # handy LS aliases (and color!)
 alias ls='ls -G'
