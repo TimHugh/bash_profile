@@ -1,6 +1,6 @@
 # load secret env variables!
 if [ -f .env ]; then
-      . .env
+  . .env
 fi
 
 # add ~ bin to path
