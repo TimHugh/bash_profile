@@ -54,3 +54,9 @@ alias serve='ruby -run -ehttpd . -p4000'
 # shortcut for gitx
 # (http://rowanj.github.io/gitx/)
 alias gitx='/Applications/GitX.app/Contents/MacOS/GitX . &'
+
+# shortcut for macdown
+# (http://macdown.uranusjr.com/)
+function md {
+  open /Applications/MacDown.app $@ &
+}
