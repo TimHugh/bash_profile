@@ -3,6 +3,11 @@ if [ -f .env ]; then
   . .env
 fi
 
+# homebrew bash completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+
 # add ~ bin to path
 export PATH=~/bin:$PATH
 
