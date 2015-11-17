@@ -32,7 +32,7 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 # set default ruby
-chruby 2.2.2
+chruby 2.2.3
 
 # nvm init
 export NVM_DIR=~/.nvm
