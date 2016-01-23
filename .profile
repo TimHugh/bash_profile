@@ -30,8 +30,6 @@ alias git='hub'
 
 # handy git alias
 alias g='git'
-# git bash completion
-source /usr/local/etc/bash_completion.d/git-completion.bash
 
 # chruby init
 source /usr/local/opt/chruby/share/chruby/chruby.sh
