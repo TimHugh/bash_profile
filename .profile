@@ -11,9 +11,6 @@ fi
 # add ~ bin to path
 export PATH=~/bin:$PATH
 
-# preferred editor from env variable
-alias edit=$EDITOR
-
 # handy LS aliases (and color!)
 alias ls='ls -G'
 alias la='ls -a'
