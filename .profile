@@ -3,11 +3,6 @@ if [ -f .env ]; then
   . .env
 fi
 
-# homebrew bash completion
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
-
 # add ~ bin to path
 export PATH=~/bin:$PATH
 
@@ -38,6 +33,11 @@ chruby 2.2.3
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+# docker init
+if [ -f ./.dockerrc ]; then
+  source ./.dockerrc
+fi
+
 # custom prompt
 export PS1='\w \$ '
 
@@ -60,3 +60,8 @@ alias gitx='/Applications/GitX.app/Contents/MacOS/GitX . &'
 function md {
   open /Applications/MacDown.app $@ &
 }
+
+# homebrew bash completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
