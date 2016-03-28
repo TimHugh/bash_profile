@@ -33,10 +33,8 @@ chruby 2.3.0
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# docker init
-if [ -f ./.dockerrc ]; then
-  source ./.dockerrc
-fi
+# init docker env for local devbox
+[[ "$(docker-machine status devbox)" == *"Running"* ]] && eval "$(docker-machine env devbox)"
 
 # custom prompt
 export PS1='\w \$ '
