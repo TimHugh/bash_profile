@@ -36,6 +36,9 @@ source $(brew --prefix nvm)/nvm.sh
 # init docker env for local devbox
 [[ "$(docker-machine status devbox)" == *"Running"* ]] && eval "$(docker-machine env devbox)"
 
+# docker-compose alias
+alias dc='docker-compose'
+
 # custom prompt
 export PS1='\w \$ '
 
