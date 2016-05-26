@@ -6,6 +6,11 @@ fi
 # add ~ bin to path
 export PATH=~/bin:$PATH
 
+# go paths
+export GOPATH=~/Projects/go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+
 # handy LS aliases (and color!)
 alias ls='ls -G'
 alias la='ls -a'
