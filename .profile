@@ -63,16 +63,6 @@ export HISTTIMEFORMAT='%Y\%m\%d %T '
 # handy dandy server
 alias serve='ruby -run -ehttpd . -p4000'
 
-# shortcut for gitx
-# (http://rowanj.github.io/gitx/)
-alias gitx='/Applications/GitX.app/Contents/MacOS/GitX . &'
-
-# shortcut for macdown
-# (http://macdown.uranusjr.com/)
-function md {
-  open /Applications/MacDown.app $@ &
-}
-
 # homebrew bash completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
