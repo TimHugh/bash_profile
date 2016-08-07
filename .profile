@@ -44,7 +44,8 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 # init docker env for local devbox
-[[ "$(docker-machine status)" == *"Running"* ]] && eval "$(docker-machine env)"
+# (currently commented out because I'm using docker beta)
+# [[ "$(docker-machine status)" == *"Running"* ]] && eval "$(docker-machine env)"
 
 # docker-compose alias
 alias dc='docker-compose'
