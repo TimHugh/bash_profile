@@ -20,6 +20,7 @@ Note that I'm on Mac OS, and I have no idea if anything I've done is Mac specifi
 ## Other bits
 
 - [My git configuration](https://gist.github.com/TimHugh/9b6303ffcc00fbc2b84a)
+- [My Sublime Text 3 config](https://gist.github.com/TimHugh/9b613931bb776a05a0e1e10d61c5eee1)
 
 ## Hat tips
 
