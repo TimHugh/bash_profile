@@ -21,6 +21,11 @@ alias lla='ls -la'
 alias df='df -h'
 alias du='du -h'
 
+# use preferred editor
+# (defined in .env so it can vary between systems)
+alias edit='$EDITOR'
+alias e='edit'
+
 # use hub in place of git
 # (https://hub.github.com/)
 alias git='hub'
