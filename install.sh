@@ -1,4 +1,3 @@
 #! /bin/bash
 
-cp ./.profile ~/.profile
-cp ./.bash_aliases ~/.bash_aliases
+cp -i src/.{bash_aliases,bash_profile,bashrc} ~/
