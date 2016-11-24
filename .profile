@@ -1,7 +1,8 @@
 # load secret env variables!
-if [ -f .env ]; then
-  . .env
-fi
+[[ -f ~/.env ]] && source ~/.env
+
+# load bash aliases
+[[ -f ~/.bash_aliases ]] && source ~/.bash_aliases
 
 # add ~ bin to path
 export PATH=~/bin:$PATH
@@ -10,28 +11,6 @@ export PATH=~/bin:$PATH
 export GOPATH=~/go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
-
-# handy LS aliases (and color!)
-alias ls='ls -G'
-alias la='ls -a'
-alias ll='ls -l'
-alias lla='ls -la'
-
-# human readable file sizes
-alias df='df -h'
-alias du='du -h'
-
-# use preferred editor
-# (defined in .env so it can vary between systems)
-alias edit='$EDITOR'
-alias e='edit'
-
-# use hub in place of git
-# (https://hub.github.com/)
-alias git='hub'
-
-# handy git alias
-alias g='git'
 
 # chruby init
 source /usr/local/opt/chruby/share/chruby/chruby.sh
@@ -44,11 +23,8 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 # init docker env for local devbox
-# (currently commented out because I'm using docker beta)
+# (currently commented out because I'm using dlite: https://github.com/nlf/dlite)
 # [[ "$(docker-machine status)" == *"Running"* ]] && eval "$(docker-machine env)"
-
-# docker-compose alias
-alias dc='docker-compose'
 
 # custom prompt
 export PS1='\w \$ '
@@ -59,6 +35,8 @@ export HISTSIZE=
 export HISTFILESIZE=
 # add timestamp to history
 export HISTTIMEFORMAT='%Y\%m\%d %T '
+# write history immediately
+export PROMPT_COMMAND='history -a'
 
 # handy dandy server
 alias serve='ruby -run -ehttpd . -p4000'
