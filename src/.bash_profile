@@ -26,8 +26,11 @@ source $(brew --prefix nvm)/nvm.sh
 # (currently commented out because I'm using dlite: https://github.com/nlf/dlite)
 # [[ "$(docker-machine status)" == *"Running"* ]] && eval "$(docker-machine env)"
 
-# custom prompt
-export PS1='\w \$ '
+# custom prompt with current git branch
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1='\W$(parse_git_branch) $ '
 
 # eternal history
 export HISTFILE='/Users/Tim/.bash_eternal_history'
