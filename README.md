@@ -18,7 +18,8 @@ Note that I'm on Mac OS, and I have no idea if anything I've done is Mac specifi
 
 ## Other bits
 
-- [My git configuration](https://gist.github.com/TimHugh/9b6303ffcc00fbc2b84a)
+- [My git config](https://gist.github.com/TimHugh/9b6303ffcc00fbc2b84a)
+- [My tmux config](https://gist.github.com/TimHugh/b39ae27a39c4d3aca4040b38b1e7f911)
 
 ## Hat tips
 
