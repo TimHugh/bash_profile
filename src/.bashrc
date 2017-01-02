@@ -13,13 +13,20 @@ export PS1='\W$(parse_git_branch) $ '
 # add user bin to path
 export PATH=~/bin:$PATH
 
+# chruby init
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+# set default ruby
+chruby 2.3.1
+
 # go paths
 export GOPATH=~/go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
-# node version manager path
+# nvm init
 export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # eternal history
 export HISTFILE='/Users/Tim/.bash_eternal_history'
