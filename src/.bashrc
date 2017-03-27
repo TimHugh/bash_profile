@@ -24,10 +24,6 @@ export GOPATH=~/go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
-# d paths
-export DPATH=~/dlang
-export PATH=$PATH:$DPATH/bin
-
 # nvm init
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
