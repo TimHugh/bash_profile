@@ -2,8 +2,7 @@
 [[ -f ~/.bashrc ]] && source ~/.bashrc
 
 # init docker env for local devbox
-# (currently commented out because I'm using dlite: https://github.com/nlf/dlite)
-# [[ "$(docker-machine status)" == *"Running"* ]] && eval "$(docker-machine env)"
+[[ "$(docker-machine status)" == *"Running"* ]] && eval "$(docker-machine env)"
 
 # handy dandy server
 alias serve='ruby -run -ehttpd . -p4000'
