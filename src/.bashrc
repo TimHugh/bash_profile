@@ -17,7 +17,7 @@ export PATH=~/bin:$PATH
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 # set default ruby
-chruby 2.3.1
+chruby 2.4.1
 
 # go paths
 export GOPATH=~/go
