@@ -13,6 +13,9 @@ export PS1='\W$(parse_git_branch) $ '
 # add user bin to path
 export PATH=~/bin:$PATH
 
+# export vimrc path
+export MYVIMRC=~/.vimrc
+
 # chruby init
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
