@@ -21,6 +21,7 @@ Note that I'm on Mac OS, and I have no idea if anything I've done is Mac specifi
 - [.gitconfig](https://gist.github.com/TimHugh/9b6303ffcc00fbc2b84a)
 - [.tmux.conf](https://gist.github.com/TimHugh/b39ae27a39c4d3aca4040b38b1e7f911)
 - [.vim/ and .vimrc](https://github.com/TimHugh/vim)
+- [dimmedMonokai theme for iTerm2](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/terminal/DimmedMonokai.terminal)
 
 ## Hat tips
 
