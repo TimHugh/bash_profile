@@ -39,3 +39,4 @@ export HISTFILESIZE=
 export HISTTIMEFORMAT='%Y\%m\%d %T '
 # write history immediately
 export PROMPT_COMMAND='history -a'
+
