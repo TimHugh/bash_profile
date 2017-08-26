@@ -26,3 +26,10 @@ alias g='git'
 # docker-compose alias
 alias dc='docker-compose'
 
+# process file to png through graphviz
+function graph {
+  infile=$1
+  outfile=${1/dot/png}
+  dot -Tpng $infile > $outfile
+}
+

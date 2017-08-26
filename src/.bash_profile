@@ -28,3 +28,4 @@ function watch {
     sleep 2
   done
 }
+
