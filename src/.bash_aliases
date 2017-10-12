@@ -26,6 +26,9 @@ alias g='git'
 # docker-compose alias
 alias dc='docker-compose'
 
+# json pretty-print
+alias pretty-json="jq '.'"
+
 # process file to png through graphviz
 function graph {
   infile=$1
