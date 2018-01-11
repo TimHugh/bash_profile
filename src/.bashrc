@@ -1,3 +1,6 @@
+# ensure homebrew is first in PATH
+export PATH=/usr/local/bin:$(getconf PATH)
+
 # load secret env variables!
 [[ -f ~/.env ]] && source ~/.env
 
@@ -20,7 +23,7 @@ export MYVIMRC=~/.vimrc
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 # set default ruby
-chruby 2.4.1
+chruby 2.4.2
 
 # go paths
 export GOPATH=~/go
