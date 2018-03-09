@@ -25,6 +25,8 @@ alias g='git'
 
 # docker-compose alias
 alias dc='docker-compose'
+alias dm='docker-machine'
+alias dm-env='eval $(docker-machine env)'
 
 # json pretty-print
 alias pretty-json="jq '.'"
@@ -35,4 +37,3 @@ function graph {
   outfile=${1/dot/png}
   dot -Tpng $infile > $outfile
 }
-
