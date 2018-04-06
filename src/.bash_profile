@@ -1,6 +1,3 @@
-# load secret env variables!
-[[ -f ~/.env ]] && source ~/.env
-
 # put homebrew first in path
 export PATH=/usr/local/bin:$(getconf PATH)
 
@@ -53,3 +50,6 @@ function watch {
 for f in ~/.bash_profile.d/* ; do
   source $f
 done
+
+# load secret env variables!
+[[ -f ~/.env ]] && source ~/.env
