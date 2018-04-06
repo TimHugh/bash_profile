@@ -1,4 +1,2 @@
-if [ -x "$(command -v chruby)" ]; then
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
-  source /usr/local/opt/chruby/share/chruby/auto.sh
-fi
+[[ -f '/usr/local/opt/chruby/share/chruby/chruby.sh' ]] && . '/usr/local/opt/chruby/share/chruby/chruby.sh'
+[[ -f '/usr/local/opt/chruby/share/chruby/auto.sh' ]]   && . '/usr/local/opt/chruby/share/chruby/auto.sh'
