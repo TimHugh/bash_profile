@@ -9,7 +9,7 @@ alias df='df -h'
 alias du='du -h'
 
 # vim shortcuts
-export MYVIMRC=~/.vimrc
+export MYVIMRC=~/.vim/.vimrc
 alias edit='vim'
 alias e='edit'
 
@@ -18,10 +18,3 @@ alias g='git'
 # use hub in place of git
 # (https://hub.github.com/)
 [[ $(command -v hub) ]] && alias git='hub'
-
-# docker aliases
-[[ $(command -v docker-compose) ]] && alias dc='docker-compose'
-if [ -x $(command -v docker-machine) ]; then
-  alias dm='docker-machine'
-  alias dm-env='eval $(docker-machine env)'
-fi

@@ -25,25 +25,9 @@ export PS1='\W$(parse_git_branch) $ '
 # add user bin to path
 export PATH=~/bin:$PATH
 
-# chruby init
-if [ -x $(command -v chruby) ]; then
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
-  source /usr/local/opt/chruby/share/chruby/auto.sh
-fi
-
-# go paths
-if [ -x $(command -v go) ]; then
-  export GOPATH=~/go
-  export GOROOT=/usr/local/opt/go/libexec
-  export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
-fi
-
 # nvm init
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-
-# init docker env for default machine
-[[ $(command -v docker-machine) ]] && [[ "$(docker-machine status)" == *"Running"* ]] && eval "$(docker-machine env)"
 
 # homebrew bash completion
 [[ -f `brew --prefix`/etc/bash_completion ]] && . `brew --prefix`/etc/bash_completion
@@ -64,3 +48,8 @@ function watch {
     sleep 2
   done
 }
+
+# load additional configs
+for f in ~/.bash_profile.d/* ; do
+  source $f
+done
