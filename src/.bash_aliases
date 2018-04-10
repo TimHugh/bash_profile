@@ -9,6 +9,7 @@ alias df='df -h'
 alias du='du -h'
 
 # vim shortcuts
+export EDITOR='vim'
 export MYVIMRC=~/.vim/.vimrc
 alias edit='vim'
 alias e='edit'
