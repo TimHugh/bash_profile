@@ -13,6 +13,9 @@ export PROMPT_COMMAND='history -a'
 # load bash aliases
 [[ -f ~/.bash_aliases ]] && source ~/.bash_aliases
 
+# load secret env variables!
+[[ -f ~/.env ]] && source ~/.env
+
 # custom prompt with current git branch
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -50,6 +53,3 @@ function watch {
 for f in ~/.bash_profile.d/* ; do
   source $f
 done
-
-# load secret env variables!
-[[ -f ~/.env ]] && source ~/.env

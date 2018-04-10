@@ -16,6 +16,12 @@ Some hints on that:
 
 Note that I'm on Mac OS, and I have no idea if anything I've done is Mac specific or not, but chances are pretty good, so watch out Linux users!
 
+It depends as little as possible on the presence of a `~/.env` file, but a couple things might act weird without it:
+
+- `DEFAULT_RUBY` - chruby uses this to set your preferred default (but will automatically pick a different one based on `./.ruby-version`)
+
+Also, I've tried to make sure that all commands that depend on something being installed are wrapped in a conditional (things that use git, docker, vim, etc.), but I might have missed some.
+
 ## Other bits
 
 - [.gitconfig](https://gist.github.com/TimHugh/9b6303ffcc00fbc2b84a)
