@@ -1,4 +1,3 @@
-echo "$(whoami) : $(uname -n)"
 cat << "EOF"
 
           /\
@@ -12,5 +11,12 @@ cat << "EOF"
 __/__/_______/___/__\___\__________________________________________________
 
 EOF
-echo "$(date)"
+
+echo "$(whoami) : $(uname -n)"
+
+date="$(date +"%A, %B %d")"
+time="$(date +"%l:%M %p")"
+utc="$(date -u +"%H:%M UTC")"
+
+echo "${date} - ${time} - ${utc}"
 echo
