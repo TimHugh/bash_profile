@@ -1,4 +1,17 @@
 # custom prompt with current git branch
+
+# GREEN="\[\e[32m\]"
+# RED="\[\e[31m\]"
+# CLEAR="\[\e[m\]"
+#
+# parse_git_branch() {
+#   local BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+#   case $BRANCH in
+#     master)       echo " (${RED}${BRANCH}${CLEAR})"    ;;
+#     *)            echo " (${GREEN}${BRANCH}${CLEAR})"  ;;
+#   esac
+# }
+
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
