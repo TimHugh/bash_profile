@@ -1,6 +1,6 @@
 #! /bin/bash
 
-src_files='bashrc bash_aliases bash_profile'
+src_files='bashrc bash_aliases bash_profile bash_prompt'
 
 echo 'Backing up old files...'
 for f in $src_files; do mv -v ~/.$f ~/.${f}_backup; done
