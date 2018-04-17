@@ -1,4 +1,5 @@
-cat << "EOF"
+function header {
+  cat << "EOF"
 
           /\
          /**\
@@ -12,11 +13,14 @@ __/__/_______/___/__\___\__________________________________________________
 
 EOF
 
-echo "$(whoami) : $(uname -n)"
+  echo "$(whoami) : $(uname -n)"
 
-date="$(date +"%A, %B %d")"
-time="$(date +"%l:%M %p")"
-utc="$(date -u +"%H:%M UTC")"
+  date="$(date +"%A, %B %d")"
+  time="$(date +"%l:%M %p")"
+  utc="$(date -u +"%H:%M UTC")"
 
-echo "${date} - ${time} - ${utc}"
-echo
+  echo "${date} - ${time} - ${utc}"
+  echo
+}
+
+header
