@@ -9,10 +9,10 @@ alias df='df -h'
 alias du='du -h'
 
 # vim shortcuts
-export EDITOR='vim'
+export EDITOR='nvim'
 export MYVIMRC=~/.vim/.vimrc
-alias edit='vim'
-alias e='edit'
+alias edit='$EDITOR'
+alias e=edit
 
 # handy git alias
 alias g='git'
