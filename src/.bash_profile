@@ -1,14 +1,15 @@
 # put homebrew first in path
 export PATH=/usr/local/bin:$(getconf PATH)
 
-# eternal history
-export HISTFILE="/Users/${USER}/.bash_eternal_history"
-export HISTSIZE=
-export HISTFILESIZE=
-# add timestamp to history
-export HISTTIMEFORMAT='%Y\%m\%d %T '
-# write history immediately
-export PROMPT_COMMAND='history -a'
+# eternal instant history (without duplicates)
+# originally from ()
+# but the real kicker is courtesy of (https://unix.stackexchange.com/a/18443)
+HISTFILE="/Users/${USER}/.bash_eternal_history"
+HISTSIZE=
+HISTFILESIZE=
+HISTCONTROL=ignoredups:erasedups
+shopt -s histappend
+PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 
 # load bash aliases
 [[ -f ~/.bash_aliases ]] && source ~/.bash_aliases
